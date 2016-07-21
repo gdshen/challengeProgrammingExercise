@@ -30,6 +30,7 @@ int main() {
     for (int i = 0; i < v2.size(); ++i) {
         cout << v2[i] << " ";
     }
+    v2.push_back(3); // note that it  push_back will cause the increase of the size of vector
 
 //  operation on stack
     stack<int> s;
