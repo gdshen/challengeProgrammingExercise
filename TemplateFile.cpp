@@ -12,6 +12,7 @@
 using namespace std;
 
 int main() {
+//  operation on vector
     vector<int> v(10);
     vector<int> v2(10, 1);
     vector<int> v3(v2);
@@ -27,6 +28,17 @@ int main() {
     sort(begin(v2), end(v2));
     for (int i = 0; i < v2.size(); ++i) {
         cout << v2[i] << " ";
+    }
+
+//  operation on stack
+    stack<int> s;
+    s.push(1);
+    s.push(2);
+    s.push(3);
+    s.pop();
+    cout << s.top() << endl;
+    if(!s.empty()) {
+        cout << "check whether stack s is empty!\n";
     }
     cout << endl;
     return 0;
