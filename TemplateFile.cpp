@@ -3,9 +3,32 @@
 //
 
 #include <iostream>
+#include <vector>
+#include <list>
+#include <stack>
+#include <unordered_map>
+#include <algorithm>
+
 using namespace std;
+
 int main() {
-   cout << "hello, world";
-   return 0;
+    vector<int> v(10);
+    vector<int> v2(10, 1);
+    vector<int> v3(v2);
+    unsigned int row = 10;
+    unsigned int column = 20;
+    vector<vector<int>> v4(row, vector<int>(column));
+
+    cout << v4.size() << endl;
+    cout << v2[3] << endl;
+
+    v2[3] = 6;
+    v2[8] = 9;
+    sort(begin(v2), end(v2));
+    for (int i = 0; i < v2.size(); ++i) {
+        cout << v2[i] << " ";
+    }
+    cout << endl;
+    return 0;
 }
 

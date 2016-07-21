@@ -7,3 +7,4 @@ set(SOURCE_FILES main.cpp)
 add_executable(challengeProgramming ${SOURCE_FILES})
 
 add_executable(TemplateFIle TemplateFile.cpp)
+add_executable(chapt2_1_recursive chapt2/violent_search/recursive.cpp)
