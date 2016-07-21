@@ -6,6 +6,7 @@
 #include <vector>
 #include <list>
 #include <stack>
+#include <queue>
 #include <unordered_map>
 #include <algorithm>
 
@@ -41,6 +42,14 @@ int main() {
         cout << "check whether stack s is empty!\n";
     }
     cout << endl;
+
+//  operation on queue
+    queue<int> que;
+    que.push(1);
+    que.push(2);
+    cout << que.front() << endl;
+    que.pop();
+
     return 0;
 }
 
